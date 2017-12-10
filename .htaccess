@@ -8,6 +8,8 @@ RewriteRule . /index.php [L]
 
 
 Redirect /wp-content/uploads/ http://aws.plastic-crate.co.uk/wp-content/uploads/
+Redirect /img/ http://aws.plastic-crate.co.uk/img/
+Redirect /js/ http://aws.plastic-crate.co.uk/js/
 
 </IfModule>
 
