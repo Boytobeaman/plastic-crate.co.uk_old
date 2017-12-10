@@ -6,7 +6,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 
-RedirectMatch 301 ^\/\/(.*)$ http:$1
+RedirectMatch 301 ^//www.plastic-crate.co.uk(.*)$ cdn.plastic-crate.co.uk$1
 
 # Apache config
 <FilesMatch ".(eot|ttf|otf|woff)">
