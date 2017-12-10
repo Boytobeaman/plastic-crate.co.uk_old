@@ -7,7 +7,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 
 
-Redirect /wp-content/uploads/ http://cdn.plastic-crate.co.uk/wp-content/uploads/
+Redirect http://www.plastic-crate.co.uk/wp-content/uploads/ http://cdn.plastic-crate.co.uk/wp-content/uploads/
 
 # Apache config
 <FilesMatch ".(eot|ttf|otf|woff)">
