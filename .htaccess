@@ -6,10 +6,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 
-Options +FollowSymLinks
 
-RewriteRule ^(.*)www.plastic-crate.co.uk/wp-content/uploads/ http://cdn.plastic-crate.co.uk/wp-content/uploads/%{REQUEST_URI} [R=302,NC]
-
+Redirect /wp-content/uploads/ http://cdn.plastic-crate.co.uk/wp-content/uploads/
 # Apache config
 <FilesMatch ".(eot|ttf|otf|woff)">
 	Header set Access-Control-Allow-Origin "*"
