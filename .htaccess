@@ -7,9 +7,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 
 
-Redirect /wp-content/uploads/ https://aws.plastic-crate.co.uk/wp-content/uploads/
-Redirect /img/ https://aws.plastic-crate.co.uk/img/
-Redirect /js/ https://aws.plastic-crate.co.uk/js/
+#Redirect /wp-content/uploads/ https://aws.plastic-crate.co.uk/wp-content/uploads/
+#Redirect /img/ https://aws.plastic-crate.co.uk/img/
+#Redirect /js/ https://aws.plastic-crate.co.uk/js/
 
 </IfModule>
 

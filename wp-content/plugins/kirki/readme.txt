@@ -3,8 +3,8 @@ Contributors: aristath, fovoc, igmoweb
 Tags: customizer,options framework, theme, mods, toolkit
 Donate link: https://aristath.github.io/donate
 Requires at least: 4.8.2
-Tested up to: 4.9.2
-Stable tag: 3.0.19
+Tested up to: 4.9.1
+Stable tag: 3.0.22
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,37 @@ Simply install as a normal WordPress plugin and activate.
 If you want to integrate Kirki in your theme or plugin, please read the instructions on [our documentation site](https://aristath.github.io/kirki/docs/integration).
 
 == Changelog ==
+
+= 3.0.22 =
+
+December 20 2017, dev time: 3.5 hours.
+
+* Fix: Files cleanup. Removed webfonts.php and now use the json file.
+* Fix: WordPress Coding Standards fixes.
+* New: Converted all filter names to use `_` instead of `/` (WPCS)
+* New: Removed inline methods for webfonts and now use [typekit/webfontloader](https://github.com/typekit/webfontloader).
+* New: Update GoogleFonts list.
+
+= 3.0.21 =
+
+December 18 2017, dev time: 3 hours
+
+* Fix: Allow HTML in labels and descriptions [#1705](https://github.com/aristath/kirki/issues/1705)
+* Fix: Code controls minor refactor (now extends the `WP_Customize_Code_Editor_Control` class)
+* Fix: Checkbox values sanitization inside repeater controls [#1715](https://github.com/aristath/kirki/issues/1715)
+* Fix: JS error in dimension controls when not using a CSS unit [#1711](https://github.com/aristath/kirki/pull/1711) props @FrankM1
+* Fix: AJAX issue on a host with weird config.
+* New: Add `placeholder` argument in `select` controls [#1593](https://github.com/aristath/kirki/issues/1593)
+
+= 3.0.20 =
+
+December 13 2017, dev time: 1.5 hours
+
+* Fix: Use `repeat` instead of `repeat-all` in background controls [#1701](https://github.com/aristath/kirki/issues/1701)
+* Fix: Use `set_url_scheme()` when outputing images [#1697](https://github.com/aristath/kirki/issues/1697)
+* Fix: `textarea` control is broken with HTML content [#1694](https://github.com/aristath/kirki/issues/1694) props @tutv95
+* Fix: Typo in `radio` controls [#1699](https://github.com/aristath/kirki/issues/1699)
+* Fix: variants selection for standard font-families.
 
 = 3.0.19 =
 
