@@ -23,17 +23,17 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'WP_CACHE', true );
-define( 'WPCACHEHOME', '/data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-super-cache/' );
-define('DB_NAME', 'plastic_crate.co.uk');
+define( 'WPCACHEHOME', 'guess' );
+define('DB_NAME', 'guess');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'guess');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'LU5541118');
+define('DB_PASSWORD', 'guess');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'guess');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
@@ -51,14 +51,14 @@ define('DB_COLLATE', '');
  * @since 2.6.0
  */
 
-define('AUTH_KEY',         '1gh;)ZWh!V!bRI0$T<ExuL]X-9@%9dEZvo5q=d:&MgfNvl`pC8!MI)-Xx:(t m-6');
-define('SECURE_AUTH_KEY',  'S1~Mp$MRJ@rlL/wO_Uqnw&hsO,v($}bga~Vt4k rUj?Q?asovOWQ)Ex/;g_+u ju');
-define('LOGGED_IN_KEY',    'LCUD{NQ$7ubQ?1&L}tU!VicQ(-R-cE5g//R6!;t%LWI8%ka?SLo.&3}8O[<w$<f ');
-define('NONCE_KEY',        'eDix(vh}@;F%N|*Wy.7c~yNdW{}M4ZrOFQjQ7m!n!ZWYYp[y3zQIDlG=I8-/HR~x');
-define('AUTH_SALT',        '<88l/J(zI:*;RK!Qz?Kt./i_8K;DK}**w)~N@<Oa:kDiT_FMM-VR{&0[X0$]#PyJ');
-define('SECURE_AUTH_SALT', 'm3KV61@Mr,8Y[75Ve8z56$J>y1I@FPf:A6JSog6B>D/v^ &$tQu.|RvJ+Ia~])vR');
-define('LOGGED_IN_SALT',   'JD$y4x^oVk96/=%a=m|E$Z3d0vA+I eC-vy{MdX+b=kaBA}<^%g|I)*elWwK)U?=');
-define('NONCE_SALT',       'u]i:~_?qw$>N.*tARH6DxXsnDWFHSymIf HeCx++_e;G;x&Fo=*jI@b2sV}N>!d6');
+define('AUTH_KEY',         'guess');
+define('SECURE_AUTH_KEY',  'guess');
+define('LOGGED_IN_KEY',    'guess');
+define('NONCE_KEY',        'guess');
+define('AUTH_SALT',        'guess');
+define('SECURE_AUTH_SALT', 'guess');
+define('LOGGED_IN_SALT',   'guess');
+define('NONCE_SALT',       'guess');
 
 /**#@-*/
 
