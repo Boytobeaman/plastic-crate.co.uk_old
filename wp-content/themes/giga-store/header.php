@@ -8,6 +8,16 @@
 		<?php wp_head(); ?>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<script src="/js/myscript.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-76091789-5"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-76091789-5');
+		</script>
+
 	</head>
 	<body id="blog" <?php body_class(); ?>>
 
