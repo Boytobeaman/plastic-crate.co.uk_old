@@ -7,7 +7,6 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<?php wp_head(); ?>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<script src="/js/myscript.js"></script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-76091789-5"></script>
 		<script>
