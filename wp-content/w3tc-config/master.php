@@ -382,7 +382,9 @@
     "cdn.cf2.key": "AKIAJA2FHZKQ5QW6O4LQ",
     "cdn.cf2.secret": "cOccWbxuDV8LwZyfiS\/bIIp12QwiZKtdfwp\/nCKQ",
     "cdn.cf2.id": "da3wz37ddl3ld",
-    "cdn.cf2.cname": [],
+    "cdn.cf2.cname": [
+        "cdn.plastic-crate.co.uk"
+    ],
     "cdn.cf2.ssl": "auto",
     "cdn.rscf.user": "",
     "cdn.rscf.key": "",
