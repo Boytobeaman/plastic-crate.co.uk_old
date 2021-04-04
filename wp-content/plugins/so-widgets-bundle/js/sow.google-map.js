@@ -1,6 +1,7 @@
 /* globals jQuery, google, sowb */
 
-var sowb = window.sowb || {};
+window.sowb = window.sowb || {};
+sowb.SiteOriginGoogleMapInstances = [];
 
 sowb.SiteOriginGoogleMap = function($) {
 	return {
@@ -16,13 +17,18 @@ sowb.SiteOriginGoogleMap = function($) {
 			var zoom = Number(options.zoom);
 
 			if ( !zoom ) zoom = 14;
+			
+			var breakpointCheck = window.matchMedia( '(max-width: ' + options.breakpoint + 'px)' )
+			// Check if the user is viewing the map on mobile
+			if ( breakpointCheck.matches ) {
+				zoom = options.mobileZoom;
+			}
 
 			var userMapTypeId = 'user_map_style';
 
 			var mapOptions = {
 				zoom: zoom,
-				scrollwheel: options.scrollZoom,
-				draggable: options.draggable,
+				gestureHandling: options.gestureHandling,
 				disableDefaultUI: options.disableUi,
 				zoomControl: options.zoomControl,
 				panControl: options.panControl,
@@ -59,6 +65,8 @@ sowb.SiteOriginGoogleMap = function($) {
 					icon: options.markerIcon,
 					title: ''
 				});
+
+				map.centerMarker = this.centerMarker;
 			}
 
 			if(options.keepCentered) {
@@ -75,6 +83,8 @@ sowb.SiteOriginGoogleMap = function($) {
 			this.showMarkers(options.markerPositions, map, options);
 			this.showDirections(options.directions, map, options);
 
+			// Expose maps instance.
+			sowb.SiteOriginGoogleMapInstances.push( map );
 		},
 
 		linkAutocompleteField: function (autocomplete, autocompleteElement, map, options) {
@@ -115,7 +125,7 @@ sowb.SiteOriginGoogleMap = function($) {
 					}
 				} );
 
-				$autocompleteElement.focusin( function () {
+				$autocompleteElement.on( 'focusin', function () {
 					if ( !this.resultsObserver ) {
 						var autocompleteResultsContainer = document.querySelector( '.pac-container' );
 						this.resultsObserver = new MutationObserver( function () {
@@ -299,10 +309,7 @@ sowb.SiteOriginGoogleMap = function($) {
 						return;
 					}
 
-					var autocomplete = new google.maps.places.Autocomplete(
-						element,
-						{types: ['address']}
-					);
+					var autocomplete = new google.maps.places.Autocomplete( element );
 
 					var $mapField = $(element).siblings('.sow-google-map-canvas');
 
@@ -356,7 +363,10 @@ sowb.SiteOriginGoogleMap = function($) {
 			}.bind(this))
 			.fail(function(error){
 				console.log(error);
-			});
+			} )
+			.done( function() {
+				$( sowb ).trigger( 'maps_loaded' );
+			} );
 		},
 		getGeocoder: function () {
 			if ( !this._geocoder ) {
@@ -371,8 +381,8 @@ sowb.SiteOriginGoogleMap = function($) {
 			var latLng;
 			
 			if ( inputLocation && inputLocation.indexOf( ',' ) > -1 ) {
-				var vals = inputLocation.split( ',' );
-				// A latlng value should be of the format 'lat,lng'
+				// A latlng value should be of the format 'lat,lng' or '(lat,lng)'
+				var vals = inputLocation.replace(/[\(\)]/g, '').split( ',' );
 				if ( vals && vals.length === 2 ) {
 					latLng = new google.maps.LatLng( vals[ 0 ], vals[ 1 ] );
 					// Let the API decide if we have a valid latlng
@@ -437,7 +447,7 @@ jQuery(function ($) {
 		}
 		$mapCanvas.each(function(index, element) {
 			var $this = $(element);
-			if ( ! $this.is( ':visible' ) || $this.data( 'apiInitialized' ) ) {
+			if ( ! $this.parent().is( ':visible' ) || $this.data( 'apiInitialized' ) ) {
 				return $this;
 			}
 			var mapOptions = $this.data( 'options' );
@@ -461,15 +471,19 @@ jQuery(function ($) {
 				}
 			}, 100 );
 		} else {
-			var apiUrl = 'https://maps.googleapis.com/maps/api/js?callback=soGoogleMapInitialize';
+			
+			if ( ! apiKey ) {
+				console.warn( 'SiteOrigin Google Maps: Could not find API key. Google Maps API key is required.' );
+				apiKey = '';
+			}
+			
+			// Try to load even if API key is missing to allow Google Maps API to provide it's own warnings/errors about missing API key.
+			var apiUrl = 'https://maps.googleapis.com/maps/api/js?key=' + apiKey + '&callback=soGoogleMapInitialize';
 
 			if ( libraries && libraries.length ) {
 				apiUrl += '&libraries=' + libraries.join(',');
 			}
 
-			if ( apiKey ) {
-				apiUrl += '&key=' + apiKey;
-			}
 
 			// This allows us to "catch" Google Maps JavaScript API errors and do a bit of custom handling. In this case,
 			// we display a user-specified fallback image if there is one.
@@ -477,7 +491,10 @@ jQuery(function ($) {
 				var errLog = window.console.error;
 
 				sowb.onLoadMapsApiError = function ( error ) {
-					var matchError = error.match( /^Google Maps API (error|warning): ([^\s]*)\s([^\s]*)(?:\s(.*))?/ );
+					var matchError;
+					if ( typeof error === 'string' ) {
+						matchError = error.match( /^Google Maps API (error|warning): ([^\s]*)\s([^\s]*)(?:\s(.*))?/ );
+					}
 					if ( matchError && matchError.length && matchError[0] ) {
 						$( '.sow-google-map-canvas' ).each( function ( index, element ) {
 							var $this = $( element );
@@ -495,8 +512,17 @@ jQuery(function ($) {
 				window.console.error = sowb.onLoadMapsApiError;
 			}
 
-			$( 'body' ).append( '<script async type="text/javascript" src="' + apiUrl + '">' );
-			sowb.mapsApiInitialized = true;
+			if ( soWidgetsGoogleMap.map_consent ) {
+				$( '.sow-google-map-consent button' ).on( 'click', function() {
+					$( '.sow-google-map-consent' ).remove();
+					$( '.sow-google-map-canvas' ).show();
+					$( 'body' ).append( '<script async type="text/javascript" src="' + apiUrl + '">' );
+					sowb.mapsApiInitialized = true;
+				} );
+			} else {
+				$( 'body' ).append( '<script async type="text/javascript" src="' + apiUrl + '">' );
+				sowb.mapsApiInitialized = true;
+			}
 		}
 	};
 	sowb.setupGoogleMaps();
@@ -504,5 +530,3 @@ jQuery(function ($) {
 	$( sowb ).on( 'setup_widgets', sowb.setupGoogleMaps );
 
 });
-
-window.sowb = sowb;

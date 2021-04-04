@@ -1,0 +1,1232 @@
+2020-08-18T00:12:54+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47350)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47350)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T00:28:53+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47351)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47351)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T00:43:19+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47352)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47352)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T00:59:08+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47353)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47353)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T01:11:38+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47354)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47354)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T01:34:31+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47355)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47355)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T01:54:59+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47356)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47356)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T02:07:24+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47357)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47357)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T02:18:44+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47358)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47358)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T02:29:14+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47359)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47359)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T02:39:16+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47360)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47360)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T02:55:28+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47361)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47361)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T03:14:17+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47362)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47362)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T03:24:21+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47363)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47363)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T03:36:02+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47364)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47364)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T03:49:11+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47365)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47365)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T04:07:35+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47366)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47366)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T04:21:03+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47367)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47367)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T04:32:55+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47368)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47368)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T04:46:39+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47369)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47369)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T04:57:17+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47370)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47370)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T05:09:14+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47371)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47371)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T05:22:54+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47372)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47372)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T05:39:32+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47373)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47373)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T05:54:33+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47374)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47374)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T06:08:34+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47375)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47375)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T06:19:37+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47376)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47376)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T06:30:39+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47377)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47377)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T06:41:28+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47378)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47378)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T06:51:52+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47379)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47379)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T07:04:36+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47380)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47380)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T07:14:58+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47381)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47381)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T07:26:47+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47382)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47382)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T07:39:54+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47383)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47383)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T07:55:48+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47384)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47384)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T08:05:58+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47385)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47385)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T08:19:27+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47386)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47386)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T08:29:55+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47387)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47387)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T08:43:28+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47388)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47388)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T08:54:56+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47389)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47389)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T09:06:34+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47390)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47390)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T09:19:11+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47391)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47391)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T09:31:37+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47392)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47392)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T09:42:28+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47393)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47393)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T09:53:53+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47394)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47394)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T10:06:01+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47395)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47395)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T10:16:41+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47396)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47396)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T10:29:35+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47397)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47397)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T10:42:24+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47398)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47398)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T10:53:23+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47399)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47399)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T11:06:35+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47400)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47400)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T11:17:13+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47401)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47401)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T11:28:39+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47402)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47402)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T11:41:01+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47403)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47403)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T11:51:40+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47404)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47404)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T12:03:01+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47405)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47405)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T12:13:59+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47406)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47406)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T12:24:47+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47407)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47407)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T12:36:32+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47408)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47408)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T12:47:26+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47409)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47409)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T13:00:22+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47410)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47410)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T13:10:40+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47411)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47411)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T13:21:22+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47412)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47412)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T13:32:04+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47413)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47413)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T13:42:06+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47414)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47414)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T13:55:40+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47415)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47415)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T14:07:13+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47416)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47416)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T14:19:02+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47417)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47417)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T14:31:55+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47418)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47418)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T14:42:16+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47419)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47419)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T14:57:38+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47420)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47420)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T15:08:35+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47421)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47421)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T15:21:13+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47422)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47422)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T15:36:58+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47423)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47423)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T15:52:42+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47424)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47424)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T16:08:28+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47425)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47425)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T16:21:31+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47426)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47426)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T16:34:17+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47427)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47427)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T16:51:15+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47428)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47428)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T17:03:10+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47429)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47429)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T17:14:48+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47430)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47430)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T17:28:54+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47431)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47431)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T17:39:35+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47432)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47432)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T17:49:50+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47433)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47433)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T18:00:36+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47434)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47434)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T18:21:43+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47435)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47435)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T18:34:06+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47436)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47436)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T18:46:34+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47437)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47437)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T18:57:42+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47438)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47438)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T19:09:22+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47439)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47439)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T19:23:56+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47440)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47440)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T19:35:21+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47441)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47441)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T19:48:57+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47442)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47442)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T20:01:43+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47443)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47443)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T20:12:05+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47444)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47444)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T20:27:50+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47445)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47445)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T20:42:06+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47446)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47446)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T20:56:21+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47447)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47447)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T21:06:27+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47448)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47448)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T21:21:07+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47449)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47449)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T21:31:13+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47450)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47450)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T21:43:48+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47451)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47451)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T22:00:00+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47452)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47452)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T22:12:54+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47453)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47453)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T22:29:50+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47454)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47454)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T22:43:16+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47455)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47455)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T22:53:33+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47456)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47456)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T23:04:17+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47457)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47457)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T23:17:18+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47458)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47458)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T23:28:36+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47459)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47459)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T23:38:57+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47460)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47460)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2020-08-18T23:48:59+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(286): pmxi_add_attachment(47461)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(3694): do_action('add_attachment', 47461)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5082): wp_insert_post(Array, false)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1190): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www.plasti in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+

@@ -140,9 +140,32 @@ var sowbForms = window.sowbForms || {};
 										$$f = $$;
 									}
 
-									// Call the function on the wrapper we've selected
-									$$f[thisHandler[i][0]].apply($$f, typeof thisHandler[i][2] !== 'undefined' ? thisHandler[i][2] : []);
+									var animated = false;
+									// Prevent animations from happening on load.
+									if ( $$f.prop( 'style' ).length ) {
+										if ( thisHandler[i][0] == 'show' ) {
+											$$f.fadeIn( 'fast' );
+											animated = true;
+										} else if ( thisHandler[i][0] == 'hide' ) {
+											$$f.fadeOut( 'fast' );
+											animated = true;
+										}
+									}
 
+									if ( ! animated ) {
+										// Call the function on the wrapper we've selected
+										$$f[ thisHandler[i][0] ].apply( $$f, typeof thisHandler[i][2] !== 'undefined' ? thisHandler[i][2] : [] );
+									}
+
+									if ( $$f.is( '.siteorigin-widget-field:visible' ) ) {
+										if ( $$f.is( '.siteorigin-widget-field-type-section' ) ) {
+											var $fields = $$f.find( '> .siteorigin-widget-section > .siteorigin-widget-field' );
+											$fields.trigger( 'sowsetupformfield' );
+										} else {
+											$$f.trigger( 'sowsetupformfield' );
+										}
+									}
+									
 								}
 
 								// Store that we've run a handler
@@ -158,7 +181,7 @@ var sowbForms = window.sowbForms || {};
 				$mainForm = $el;
 
 				var $teaser = $el.find('.siteorigin-widget-teaser');
-				$teaser.find('.dashicons-dismiss').click(function () {
+				$teaser.find( '.dashicons-dismiss' ).on( 'click', function() {
 					var $$ = $(this);
 					$.get($$.data('dismiss-url'));
 
@@ -175,31 +198,36 @@ var sowbForms = window.sowbForms || {};
 					var data = JSON.parse( sessionStorage.getItem( _sow_form_id ) );
 					if ( data ) {
 						if ( data['_sow_form_timestamp'] > _sow_form_timestamp ) {
-							var $newerNotification = $( '<div class="siteorigin-widget-form-notification">' +
-								'<span>' + soWidgets.backup.newerVersion + '</span>' +
-								'<a class="button button-small so-backup-restore">' + soWidgets.backup.restore + '</a>' +
-								'<a class="button button-small so-backup-dismiss">' + soWidgets.backup.dismiss + '</a>' +
-								'<div><small>' + soWidgets.backup.replaceWarning + '</small></div>' +
-								'</div>' );
-							$el.prepend( $newerNotification );
-	
-							$newerNotification.find( '.so-backup-restore' ).click( function () {
-								sowbForms.setWidgetFormValues( $mainForm, data );
-								$newerNotification.slideUp( 'fast', function () {
-									$newerNotification.remove();
-								} );
-							} );
-							$newerNotification.find( '.so-backup-dismiss' ).click( function () {
-								$newerNotification.slideUp( 'fast', function () {
-									sessionStorage.removeItem( _sow_form_id );
-									$newerNotification.remove();
-								} );
-							} );
+							sowbForms.displayNotice(
+								$el,
+								soWidgets.backup.newerVersion,
+								soWidgets.backup.replaceWarning,
+								[
+									{
+										label: soWidgets.backup.restore,
+										callback: function ( $notice ) {
+											sowbForms.setWidgetFormValues( $mainForm, data );
+											$notice.slideUp( 'fast', function () {
+												$notice.remove();
+											} );
+										},
+									},
+									{
+										label: soWidgets.backup.dismiss,
+										callback: function ( $notice ) {
+											$notice.slideUp( 'fast', function () {
+												sessionStorage.removeItem( _sow_form_id );
+												$notice.remove();
+											} );
+										},
+									},
+								]
+							);
 						} else {
 							sessionStorage.removeItem( _sow_form_id );
 						}
 					}
-					$el.change( function () {
+					$el.on( 'change', function() {
 						$timestampField.val( new Date().getTime() );
 						var data = sowbForms.getWidgetFormValues( $el );
 						sessionStorage.setItem( _sow_form_id, JSON.stringify( data ) );
@@ -258,7 +286,7 @@ var sowbForms = window.sowbForms || {};
 				$(this).toggleClass('siteorigin-widget-section-visible');
 				$(this).parent().find('> .siteorigin-widget-section, > .siteorigin-widget-widget > .siteorigin-widget-section')
 					.slideToggle('fast', function () {
-						$(window).resize();
+						$( window ).trigger( 'resize' );
 						$(this).find('> .siteorigin-widget-field-container-state').val($(this).is(':visible') ? 'open' : 'closed');
 
 						if ( $( this ).is( ':visible' ) ) {
@@ -267,8 +295,8 @@ var sowbForms = window.sowbForms || {};
 						}
 					} );
 			};
-			$fields.filter('.siteorigin-widget-field-type-widget, .siteorigin-widget-field-type-section').find('> label').click(expandContainer);
-			$fields.filter('.siteorigin-widget-field-type-posts').find('.posts-container-label-wrapper').click(expandContainer);
+			$fields.filter( '.siteorigin-widget-field-type-widget, .siteorigin-widget-field-type-section' ).find( '> label' ).on( 'click', expandContainer );
+			$fields.filter( '.siteorigin-widget-field-type-posts' ).find( '.posts-container-label-wrapper' ).on( 'click', expandContainer );
 
 			///////////////////////////////////////
 			// Handle the slider fields
@@ -286,12 +314,10 @@ var sowbForms = window.sowbForms || {};
 					slide: function (event, ui) {
 						$input.val( parseFloat( ui.value ) );
 						$input.trigger( 'change' );
-					},
-					change: function( event, ui ) {
 						$$.find('.siteorigin-widget-slider-value').html(ui.value);
 					},
 				});
-				$input.change(function(event, data) {
+				$input.on( 'change', function( event, data ) {
 					if ( ! ( data && data.silent ) ) {
 						$c.slider( 'value', parseFloat( $input.val() ) );
 					}
@@ -339,10 +365,10 @@ var sowbForms = window.sowbForms || {};
 				};
 
 				// Toggle display of the existing content
-				$$.find('.select-content-button, .button-close').click(function (e) {
+				$$.find( '.select-content-button, .button-close' ).on( 'click', function( e ) {
 					e.preventDefault();
 
-					$(this).blur();
+					$(this).trigger( 'blur' );
 					var $s = $$.find('.existing-content-selector');
 					$s.toggle();
 
@@ -357,12 +383,12 @@ var sowbForms = window.sowbForms || {};
 					e.preventDefault();
 					var $li = $(this);
 					$$.find('input.siteorigin-widget-input').val('post: ' + $li.data('value'));
-					$$.change();
+					$$.trigger( 'change' );
 					$$.find('.existing-content-selector').toggle();
 				});
 
 				var interval = null;
-				$$.find('.content-text-search').keyup(function () {
+				$$.find( '.content-text-search' ).on( 'keyup', function() {
 					if (interval !== null) {
 						clearTimeout(interval);
 					}
@@ -417,7 +443,12 @@ var sowbForms = window.sowbForms || {};
 						if ( widgetFieldId !== false && ! emitter.hasOwnProperty( 'widgetFieldId' ) ) {
 							emitter.widgetFieldId = widgetFieldId;
 							emitter.args = emitter.args.map(function (arg) {
-								return arg + '_' + widgetFieldId;
+								if ( emitter.callback === 'conditional' ) {
+									arg = arg.replace( /(.*)(\[.*)/, '$1_' + widgetFieldId + '$2' );
+								} else {
+									arg = arg + '_' + widgetFieldId;
+								}
+								return arg;
 							});
 						}
 
@@ -506,7 +537,7 @@ var sowbForms = window.sowbForms || {};
 		var $el = $(this);
 		var previewButton = $el.siblings('.siteorigin-widget-preview');
 
-		previewButton.find('> a').click(function (e) {
+		previewButton.find( '> a' ).on( 'click', function( e ) {
 			e.preventDefault();
 
 			var data = sowbForms.getWidgetFormValues($el);
@@ -518,9 +549,9 @@ var sowbForms = window.sowbForms || {};
 			modal.find('iframe').on('load', function () {
 				$(this).css('visibility', 'visible');
 			});
-			modal.find('form').submit();
+			modal.find( 'form' ).trigger( 'submit' );
 
-			modal.find('.close').click(function () {
+			modal.find( '.close' ).on( 'click', function() {
 				modal.remove();
 			});
 		});
@@ -589,7 +620,8 @@ var sowbForms = window.sowbForms || {};
 				var scrollCount = $el.data('scroll-count') ? parseInt($el.data('scroll-count')) : 0;
 				if (scrollCount > 0 && $rptrItems.length > scrollCount) {
 					var itemHeight = $rptrItems.first().outerHeight();
-					$$.css('max-height', itemHeight * scrollCount).css('overflow', 'auto');
+					$$.css( 'max-height', itemHeight * scrollCount + 'px' );
+					$$.css( 'overflow', 'auto' );
 				}
 				else {
 					//TODO: Check whether there was a value before overriding and set it back to that.
@@ -623,19 +655,19 @@ var sowbForms = window.sowbForms || {};
 			});
 			$items.trigger('updateFieldPositions');
 
-			$el.find('> .siteorigin-widget-field-repeater-add').disableSelection().click(function (e) {
+			$el.find( '> .siteorigin-widget-field-repeater-add' ).disableSelection().on( 'click', function( e ) {
 				e.preventDefault();
 				$el.closest('.siteorigin-widget-field-repeater')
 					.sowAddRepeaterItem()
 					.find('> .siteorigin-widget-field-repeater-items').slideDown('fast', function () {
-					$(window).resize();
+					$( window ).trigger( 'resize' );
 				});
 			});
 
-			$el.find('> .siteorigin-widget-field-repeater-top > .siteorigin-widget-field-repeater-expand').click(function (e) {
+			$el.find( '> .siteorigin-widget-field-repeater-top > .siteorigin-widget-field-repeater-expand' ).on( 'click', function( e ) {
 				e.preventDefault();
 				$el.closest('.siteorigin-widget-field-repeater').find('> .siteorigin-widget-field-repeateritems-').slideToggle('fast', function () {
-					$(window).resize();
+					$( window ).trigger( 'resize' );
 				});
 			});
 		});
@@ -670,22 +702,22 @@ var sowbForms = window.sowbForms || {};
 			} );
 
 			var readonly = typeof $el.attr('readonly') !== 'undefined';
-			var item = $('<div class="siteorigin-widget-field-repeater-item ui-draggable" />')
+			var item = $( '<div class="siteorigin-widget-field-repeater-item ui-draggable"></div>' )
 				.append(
-					$('<div class="siteorigin-widget-field-repeater-item-top" />')
+					$( '<div class="siteorigin-widget-field-repeater-item-top"></div>' )
 						.append(
-							$('<div class="siteorigin-widget-field-expand" />')
+							$( '<div class="siteorigin-widget-field-expand"></div>' )
 						)
 						.append(
-							readonly ? '' : $('<div class="siteorigin-widget-field-copy" />')
+							readonly ? '' : $( '<div class="siteorigin-widget-field-copy"></div>')
 						)
 						.append(
-							readonly ? '' : $('<div class="siteorigin-widget-field-remove" />')
+							readonly ? '' : $( '<div class="siteorigin-widget-field-remove"></div>' )
 						)
-						.append($('<h4 />').html($el.data('item-name')))
+						.append( $( '<h4></h4>' ).html( $el.data( 'item-name' ) ) )
 				)
 				.append(
-					$('<div class="siteorigin-widget-field-repeater-item-form" />')
+					$( '<div class="siteorigin-widget-field-repeater-item-form"></div>' )
 						.html(repeaterHtml)
 				);
 
@@ -693,7 +725,7 @@ var sowbForms = window.sowbForms || {};
 			$el.find('> .siteorigin-widget-field-repeater-items').append(item).sortable("refresh").trigger('updateFieldPositions');
 			item.sowSetupRepeaterItems();
 			item.hide().slideDown('fast', function () {
-				$(window).resize();
+				$( window ).trigger( 'resize' );
 			});
 			$el.trigger( 'change' );
 		});
@@ -716,15 +748,30 @@ var sowbForms = window.sowbForms || {};
 				var $parentRepeater = $el.closest('.siteorigin-widget-field-repeater');
 				var itemTop = $el.find('> .siteorigin-widget-field-repeater-item-top');
 				var itemLabel = $parentRepeater.data('item-label');
-				if (itemLabel && itemLabel.selector) {
+				var defaultLabel = $el.parents('.siteorigin-widget-field-repeater').data('item-name');
+				if ( itemLabel && ( itemLabel.hasOwnProperty( 'selector' ) || itemLabel.hasOwnProperty( 'selectorArray' ) ) ) {
 					var updateLabel = function () {
-						var functionName = ( itemLabel.hasOwnProperty('valueMethod') && itemLabel.valueMethod ) ? itemLabel.valueMethod : 'val';
-						var txt = $el.find(itemLabel.selector)[functionName]();
+						var functionName, txt, selectorRow;
+						if ( itemLabel.hasOwnProperty( 'selectorArray' ) ) {
+							for ( var i = 0 ; i < itemLabel.selectorArray.length ; i++ ) {
+								selectorRow = itemLabel.selectorArray[ i ];
+								functionName = ( selectorRow.hasOwnProperty( 'valueMethod' ) && selectorRow.valueMethod ) ? selectorRow.valueMethod : 'val';
+								txt = $el.find( selectorRow.selector )[ functionName ]();
+								if ( txt ) {
+									break;
+								}
+							}
+						} else {
+							functionName = ( itemLabel.hasOwnProperty( 'valueMethod' ) && itemLabel.valueMethod ) ? itemLabel.valueMethod : 'val';
+							txt = $el.find( itemLabel.selector )[ functionName ]();
+						}
 						if (txt) {
 							if (txt.length > 80) {
 								txt = txt.substr(0, 79) + '...';
 							}
 							itemTop.find('h4').text(txt);
+						} else {
+							itemTop.find('h4').text(defaultLabel);
 						}
 					};
 					updateLabel();
@@ -732,18 +779,24 @@ var sowbForms = window.sowbForms || {};
 					$el.bind(eventName, updateLabel);
 				}
 
-				itemTop.click(function (e) {
+				itemTop.on( 'click', function( e ) {
 					if (e.target.className === "siteorigin-widget-field-remove" || e.target.className === "siteorigin-widget-field-copy") {
 						return;
 					}
 					e.preventDefault();
 					$(this).closest('.siteorigin-widget-field-repeater-item').find('.siteorigin-widget-field-repeater-item-form').eq(0).slideToggle('fast', function () {
-						$(window).resize();
+						$( window ).trigger( 'resize' );
 						if ($(this).is(':visible')) {
 							$(this).trigger('slideToggleOpenComplete');
-
-							var $fields = $( this ).find( '> .siteorigin-widget-field' );
-							$fields.trigger( 'sowsetupformfield' );
+							
+							$( this ).find( '.siteorigin-widget-field-type-section > .siteorigin-widget-section > .siteorigin-widget-field,> .siteorigin-widget-field' )
+							.each( function (index, element) {
+								var $field = $( element );
+								if ( $field.is( ':visible' ) ) {
+									$field.trigger( 'sowsetupformfield' );
+								}
+								
+							} );
 						}
 						else {
 							$(this).trigger('slideToggleCloseComplete');
@@ -751,23 +804,23 @@ var sowbForms = window.sowbForms || {};
 					});
 				});
 
-				itemTop.find('.siteorigin-widget-field-remove').click(function (e, params) {
+				itemTop.find( '.siteorigin-widget-field-remove' ).on( 'click', function( e, params ) {
 					e.preventDefault();
 					var $s = $( this ).closest( '.siteorigin-widget-field-repeater-items' );
 					var $item = $( this ).closest( '.siteorigin-widget-field-repeater-item' );
 					var removeItem = function () {
 						$item.remove();
 						$s.sortable( "refresh" ).trigger( 'updateFieldPositions' );
-						$( window ).resize();
+						$( window ).trigger( 'resize' );
+						$parentRepeater.trigger( 'change' );
 					};
 					if ( params && params.silent ) {
 						removeItem();
 					} else if ( confirm( soWidgets.sure ) ) {
 						$item.slideUp('fast', removeItem );
 					}
-					$el.trigger( 'change' );
 				});
-				itemTop.find('.siteorigin-widget-field-copy').click(function (e) {
+				itemTop.find( '.siteorigin-widget-field-copy' ).on( 'click', function( e ) {
 					e.preventDefault();
 					var $form = $(this).closest('.siteorigin-widget-form-main');
 					var $item = $(this).closest('.siteorigin-widget-field-repeater-item');
@@ -844,7 +897,14 @@ var sowbForms = window.sowbForms || {};
 								newId = idBase + '-' + newIds[idBase]++;
 							}
 
+							if ( $inputElement.is( '.wp-editor-area' ) ) {
+								// Prevent potential id overlap by appending the textarea field with a random id.
+								newId += Math.floor( Math.random() * 1000 );
+								$inputElement.data( 'tinymce-id', newId );
+							}
+
 							$inputElement.attr('id', newId);
+
 							if ( $inputElement.is( '.wp-editor-area' ) ) {
 								var tmceContainer = $inputElement.closest( '.siteorigin-widget-tinymce-container' );
 								var mediaButtons = tmceContainer.data( 'media-buttons' );
@@ -879,7 +939,7 @@ var sowbForms = window.sowbForms || {};
 					$items.append($copyItem).sortable("refresh").trigger('updateFieldPositions');
 					$copyItem.sowSetupRepeaterItems();
 					$copyItem.hide().slideDown('fast', function () {
-						$(window).resize();
+						$( window ).trigger( 'resize' );
 					});
 					$el.trigger( 'change' );
 				});
@@ -959,6 +1019,10 @@ var sowbForms = window.sowbForms || {};
 		else {
 			callback(window.sowVars[widget][key]);
 		}
+	};
+	
+	sowbForms.getWidgetIdBase = function ( formContainer ) {
+		return formContainer.data( 'id-base' );
 	};
 
 	sowbForms.getWidgetFormValues = function ( formContainer ) {
@@ -1118,7 +1182,7 @@ var sowbForms = window.sowbForms || {};
 				if ( numItems > numChildren ) {
 					// If data items > child items, create extra child items.
 					for ( var i = 0; i < numItems - numChildren; i++) {
-						$repeater.find( '> .siteorigin-widget-field-repeater-add' ).click();
+						$repeater.find( '> .siteorigin-widget-field-repeater-add' ).trigger( 'click' );
 					}
 
 				} else if ( ! skipMissingValues && numItems < numChildren ) {
@@ -1218,8 +1282,60 @@ var sowbForms = window.sowbForms || {};
 			
 			if ( triggerChange ) {
 				$$.trigger( 'change' );
+				this.dispatchEvent(new Event('change', {bubbles: true, cancelable: true}));
 			}
 		});
+	};
+	
+	
+	/**
+	 * Displays an informational notice either at the top of the supplied container, or above the optionally supplied
+	 * element.
+	 *
+	 * @param $container	The jQuery container in which the notice will be prepended.
+	 * @param title			The string title for the notice.
+	 * @param message		The string detail message for the notice.
+	 * @param buttons		An array of buttons which will be display along with the notice.
+	 * @param $element		The optional jQuery element before which the notice will be inserted. If this is supplied it
+	 * 						will take precedence over the $container argument.
+	 *
+	 */
+	sowbForms.displayNotice = function ( $container, title, message, buttons, $element ) {
+		
+		var $notice = $( '<div class="siteorigin-widget-form-notification"></div>' );
+		if ( title ) {
+			$notice.append( '<span>' + title + '</span>' );
+		}
+		
+		if ( buttons && buttons.length ) {
+			buttons.forEach( function ( button ) {
+				var buttonClasses = '';
+				if ( button.classes && button.classes.length ) {
+					buttonClasses = ' ' + button.classes.join( ' ' );
+				}
+				var $button = $( '<a class="button button-small' + buttonClasses + '">' + button.label + '</a>' );
+				
+				if ( button.url ) {
+					$button.attr( 'href', button.url );
+				}
+				if ( button.callback ) {
+					$button.on( 'click', function () {
+						button.callback( $notice );
+					});
+				}
+				
+				$notice.append( $button );
+			} );
+		}
+		if ( message ) {
+			$notice.append( '<div><small>' + message + '</small></div>' );
+		}
+		
+		if ( $element ) {
+			$element.before( $notice );
+		} else {
+			$container.prepend( $notice );
+		}
 	};
 
 	// When we click on a widget top
@@ -1240,7 +1356,9 @@ var sowbForms = window.sowbForms || {};
 	if ( $body.hasClass('block-editor-page') ) {
 		// Setup new widgets when they're previewed in the block editor.
 		$(document).on('panels_setup_preview', function () {
-			$( sowb ).trigger( 'setup_widgets', { preview: true } );
+			if (window.hasOwnProperty('sowb')) {
+				$( sowb ).trigger( 'setup_widgets', { preview: true } );
+			}
 		});
 	}
 

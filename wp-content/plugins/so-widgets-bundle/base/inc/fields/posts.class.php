@@ -4,15 +4,29 @@
  * Class SiteOrigin_Widget_Field_Posts
  */
 class SiteOrigin_Widget_Field_Posts extends SiteOrigin_Widget_Field_Container_Base {
+	
+	/**
+	 * An array of post types to use in the query for posts when the 'Select Content' button is clicked.
+	 *
+	 * @access protected
+	 * @var array
+	 */
+	protected $post_types;
 
 	public function __construct( $base_name, $element_id, $element_name, $field_options, SiteOrigin_Widget $for_widget, $parent_container = array() ) {
 		parent::__construct( $base_name, $element_id, $element_name, $field_options, $for_widget, $parent_container );
 
 		$types        = get_post_types( array( 'public' => true ), 'objects' );
-		$type_options = array( '_all' => __( 'All', 'so-widgets-bundle' ) );
+		$type_options = array();
+		
+		if ( empty( $this->post_types ) || in_array( '_all', $this->post_types ) ) {
+			$type_options['_all'] = __( 'All', 'so-widgets-bundle' );
+		}
 
 		foreach ( $types as $id => $type ) {
-			$type_options[ $id ] = $type->labels->name;
+			if ( empty( $this->post_types ) || in_array( $id, $this->post_types ) ) {
+				$type_options[ $id ] = $type->labels->name;
+			}
 		}
 
 		$this->fields = array(
@@ -123,7 +137,7 @@ class SiteOrigin_Widget_Field_Posts extends SiteOrigin_Widget_Field_Container_Ba
 			'additional' => array(
 				'type'        => 'text',
 				'label'       => __( 'Additional', 'so-widgets-bundle' ),
-				'description' => __( 'Additional query arguments. See <a href="http://codex.wordpress.org/Function_Reference/query_posts" target="_blank" rel="noopener noreferrer">query_posts</a>.', 'so-widgets-bundle' ),
+				'description' => __( 'Additional query arguments. See <a href="https://developer.wordpress.org/reference/functions/query_posts/" target="_blank" rel="noopener noreferrer">query_posts</a>.', 'so-widgets-bundle' ),
 			),
 		);
 	}
@@ -150,10 +164,25 @@ class SiteOrigin_Widget_Field_Posts extends SiteOrigin_Widget_Field_Container_Ba
 			} ?>"><?php
 		}
 
+		if ( isset( $this->field_options['fields'] ) ) {
+			$this->override_fields();
+		}
+
 		$this->create_and_render_sub_fields( $value, array( 'name' => $this->base_name, 'type' => 'composite' ) );
 
 		if ( $this->collapsible ) {
 			?></div><?php
+		}
+	}
+
+	private function override_fields() {
+		foreach ( $this->field_options['fields'] as $field => $options ) {
+			// Are we removing, or updating this field?
+			if ( ! empty( $options['remove'] ) ) {
+				unset( $this->fields[ $field ] );
+			} else {
+				$this->fields[ $field ] = wp_parse_args( $this->field_options['fields'][ $field ], $this->fields[ $field ] );
+			}
 		}
 	}
 

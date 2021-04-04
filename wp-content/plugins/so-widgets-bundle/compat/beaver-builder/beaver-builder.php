@@ -32,13 +32,14 @@ class SiteOrigin_Widgets_Bundle_Beaver_Builder {
 		global $wp_widget_factory;
 
 		// Beaver Builder does it's editing in the front end so enqueue required form scripts for active widgets.
+		$so_widgets_bundle = SiteOrigin_Widgets_Bundle::single();
+		$so_widgets_bundle->enqueue_registered_widgets_scripts( false, true );
+		
 		$any_widgets_active = false;
 		foreach ( $wp_widget_factory->widgets as $class => $widget_obj ) {
 			if ( ! empty( $widget_obj ) && is_object( $widget_obj ) && is_subclass_of( $widget_obj, 'SiteOrigin_Widget' ) ) {
 				$any_widgets_active = true;
-				ob_start();
-				$widget_obj->form( array() );
-				ob_clean();
+				break;
 			}
 		}
 
@@ -59,13 +60,16 @@ class SiteOrigin_Widgets_Bundle_Beaver_Builder {
 
 			wp_enqueue_style( 'wp-color-picker' );
 
-			// Localization args for when wp-color-picker script hasn't been registered.
-			wp_localize_script( 'wp-color-picker', 'wpColorPickerL10n', array(
-				'clear'         => __( 'Clear', 'so-widgets-bundle' ),
-				'defaultString' => __( 'Default', 'so-widgets-bundle' ),
-				'pick'          => __( 'Select Color', 'so-widgets-bundle' ),
-				'current'       => __( 'Current Color', 'so-widgets-bundle' ),
-			) );
+			global $wp_version;
+			if ( version_compare( $wp_version, '5.5', '<' ) ) {
+				// Localization args for when wp-color-picker script hasn't been registered.
+				wp_localize_script( 'wp-color-picker', 'wpColorPickerL10n', array(
+					'clear'         => __( 'Clear', 'so-widgets-bundle' ),
+					'defaultString' => __( 'Default', 'so-widgets-bundle' ),
+					'pick'          => __( 'Select Color', 'so-widgets-bundle' ),
+					'current'       => __( 'Current Color', 'so-widgets-bundle' ),
+				) );
+			}
 		}
 
 		wp_enqueue_style( 'sowb-styles-for-beaver', plugin_dir_url( __FILE__ ) . 'styles.css' );

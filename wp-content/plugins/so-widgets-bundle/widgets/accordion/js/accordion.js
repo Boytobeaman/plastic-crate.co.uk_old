@@ -12,7 +12,7 @@ jQuery( function ( $ ) {
 			}
 
 			var $accordionPanels = $( element ).find( '> .sow-accordion-panel' );
-			$accordionPanels.not( '.sow-accordion-panel-open' ).find( '.sow-accordion-panel-content' ).hide();
+			$accordionPanels.not( '.sow-accordion-panel-open' ).children( '.sow-accordion-panel-content' ).hide();
 			var openPanels = $accordionPanels.filter( '.sow-accordion-panel-open' ).toArray();
 
 			var updateHash = function () {
@@ -34,15 +34,28 @@ jQuery( function ( $ ) {
 			var openPanel = function ( panel, preventHashChange, keepVisible ) {
 				var $panel = $( panel );
 				if ( ! $panel.is( '.sow-accordion-panel-open' ) ) {
-					$panel.find( '> .sow-accordion-panel-content' ).slideDown(
-						function() {
-							if ( keepVisible && $panel.offset().top < window.scrollY ) {
+					$panel.find( '> .sow-accordion-panel-content' ).slideDown( {
+						start: function () {
+							// Sometimes the content of the panel relies on a window resize to setup correctly.
+							// Trigger it here so it's hopefully done before the animation.
+							$( window ).trigger( 'resize' );
+							$( sowb ).trigger( 'setup_widgets' );
+						},
+						complete: function() {
+							if (
+								keepVisible &&
+								sowAccordion.scrollto_after_change &&
+								(
+									$panel.offset().top < window.scrollY ||
+									$panel.offset().top + $panel.height() > window.scrollY
+								)
+							) {
 								scrollToPanel( $panel, true );
 							}
 							$( this ).trigger( 'show' );
-							$( sowb ).trigger( 'setup_widgets' );
 						}
-					);
+					});
+					$panel.find(  '> .sow-accordion-panel-header-container > .sow-accordion-panel-header' ).attr( 'aria-expanded', true );
 					$panel.addClass( 'sow-accordion-panel-open' );
 					openPanels.push( panel );
 
@@ -65,6 +78,7 @@ jQuery( function ( $ ) {
 							$( this ).trigger( 'hide' );
 						}
 					);
+					$panel.find(  '> .sow-accordion-panel-header-container > .sow-accordion-panel-header' ).attr( 'aria-expanded', false );
 					$panel.removeClass( 'sow-accordion-panel-open' );
 					openPanels.splice( openPanels.indexOf( panel ), 1 );
 					if ( ! preventHashChange ) {
@@ -73,7 +87,13 @@ jQuery( function ( $ ) {
 				}
 			};
 			
-			$accordionPanels.find( '> .sow-accordion-panel-header' ).click( function () {
+			$accordionPanels.find( '> .sow-accordion-panel-header-container > .sow-accordion-panel-header' ).on( 'click keydown', function( e ) {
+				if ( e.type == 'keydown' ) {
+					if ( e.keyCode !== 13 && e.keyCode !== 32 ){
+						return;
+					}
+					e.preventDefault();
+				}
 				var $this = $( this );
 				var maxOpenPanels = $widget.data( 'maxOpenPanels' );
 				var $panel = $this.closest( '.sow-accordion-panel' );
@@ -127,9 +147,12 @@ jQuery( function ( $ ) {
 					var panels = $accordionPanels.toArray();
 					for ( var i = 0; i < panels.length; i++ ) {
 						var panel = panels[ i ];
-						var anchor = $( panel ).data( 'anchor' );
-						var anchors = window.location.hash.substring(1).split( ',' ); 
-						if ( anchor && $.inArray( anchor, anchors ) > -1 ) {
+						var panelAnchor = $( panel ).data( 'anchor' );
+						var anchors = window.location.hash.substring(1).split( ',' );
+						var panelOpen = anchors.some(function (anchor) {
+							return decodeURI( panelAnchor ) === decodeURI( anchor );
+						});
+						if ( panelOpen ) {
 							openPanel( panel, true );
 						} else {
 							closePanel( panel, true );
@@ -143,7 +166,11 @@ jQuery( function ( $ ) {
 					updateHash();
 				}
 				var initialScrollPanel = $widget.data( 'initialScrollPanel' );
-				if ( initialScrollPanel > 0 ) {
+				if ( window.location.hash && openPanels.length ) {
+					setTimeout( function() {
+						scrollToPanel( $( openPanels[0] ) );
+					}, 500 );
+				} else if ( initialScrollPanel > 0 ) {
 					var $initialScrollPanel = initialScrollPanel > $accordionPanels.length ?
 						$accordionPanels.last() :
 						$accordionPanels.eq( initialScrollPanel - 1 );

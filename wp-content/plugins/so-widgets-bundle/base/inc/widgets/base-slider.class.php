@@ -49,6 +49,29 @@ abstract class SiteOrigin_Widget_Base_Slider extends SiteOrigin_Widget {
 	 */
 	function control_form_fields(){
 		return array(
+			'autoplay' => array(
+				'type' => 'checkbox',
+				'label' => __( 'Autoplay', 'so-widgets-bundle' ),
+				'description' => __( 'Change slides automatically without user interaction.', 'so-widgets-bundle' ),
+				'default' => true,
+				'state_emitter' => array(
+					'callback' => 'conditional',
+					'args'     => array(
+						'autoplay[autoplay]: val',
+						'autoplay[static]: ! val',
+					),
+				),
+			),
+
+			'autoplay_hover' => array(
+				'type' => 'checkbox',
+				'label' => __( 'Autoplay pause on hover', 'so-widgets-bundle' ),
+				'default' => false,
+				'state_handler' => array(
+					'autoplay[autoplay]' => array( 'show' ),
+					'autoplay[static]' => array( 'hide' ),
+				),
+			),
 			'speed' => array(
 				'type' => 'number',
 				'label' => __('Animation speed', 'so-widgets-bundle'),
@@ -61,6 +84,10 @@ abstract class SiteOrigin_Widget_Base_Slider extends SiteOrigin_Widget {
 				'label' => __('Timeout', 'so-widgets-bundle'),
 				'description' => __('How long each frame is displayed for in milliseconds.', 'so-widgets-bundle'),
 				'default' => 8000,
+				'state_handler' => array(
+					'autoplay[autoplay]' => array( 'show' ),
+					'autoplay[static]' => array( 'hide' ),
+				),
 			),
 
 			'nav_color_hex' => array(
@@ -91,9 +118,14 @@ abstract class SiteOrigin_Widget_Base_Slider extends SiteOrigin_Widget {
 				'default' => '25',
 			),
 
+			'nav_always_show_mobile' => array(
+				'type' => 'checkbox',
+				'label' => __( 'Always show navigation on mobile', 'so-widgets-bundle' ),
+			),
+			
 			'swipe' => array(
 				'type' => 'checkbox',
-				'label' => __( 'Swipe Control', 'so-widgets-bundle' ),
+				'label' => __( 'Swipe control', 'so-widgets-bundle' ),
 				'description' => __( 'Allow users to swipe through frames on mobile devices.', 'so-widgets-bundle' ),
 				'default' => true,
 			),
@@ -138,12 +170,17 @@ abstract class SiteOrigin_Widget_Base_Slider extends SiteOrigin_Widget {
 					'video/ogg' => 'Ogg',
 				),
 			),
+		);
+	}
 
-			'height' => array(
-				'type' => 'number',
-				'label' => __( 'Maximum height', 'so-widgets-bundle' )
-			),
-
+	function get_settings_form() {
+		return array(
+			'responsive_breakpoint' => array(
+				'type'        => 'measurement',
+				'label'       => __( 'Responsive Breakpoint', 'so-widgets-bundle' ),
+				'default'     => '780px',
+				'description' => __( "This setting controls when the Slider will switch to the responsive mode. This breakpoint will only be used if always show navigation on mobile is enabled. The default value is 780px.", 'so-widgets-bundle' )
+			)
 		);
 	}
 
@@ -152,7 +189,11 @@ abstract class SiteOrigin_Widget_Base_Slider extends SiteOrigin_Widget {
 			'pagination'               => true,
 			'speed'                    => empty( $controls['speed'] ) ? 1 : $controls['speed'],
 			'timeout'                  => $controls['timeout'],
+			'paused'                   => empty( $controls['autoplay'] ) ?: false,
+			'pause_on_hover'           => ! empty( $controls['autoplay_hover'] ) ?: false,
 			'swipe'                    => $controls['swipe'],
+			'nav_always_show_mobile'   => ! empty( $controls['nav_always_show_mobile'] ) ? true : '',
+			'breakpoint'               => ! empty( $controls['breakpoint'] ) ? $controls['breakpoint'] : '780px',
 		);
 	}
 
@@ -185,7 +226,7 @@ abstract class SiteOrigin_Widget_Base_Slider extends SiteOrigin_Widget {
 				?>
 				<ol class="sow-slider-pagination">
 					<?php foreach($frames as $i => $frame) : ?>
-						<li><a href="#" data-goto="<?php echo $i ?>" aria-label="<?php printf( __( 'display slide %s', 'so-widgets-bundle' ), $i+1 ) ?>"><?php echo $i+1 ?></a></li>
+						<li><a href="#" data-goto="<?php echo $i ?>" aria-label="<?php printf( __( 'display slide %s', 'so-widgets-bundle' ), $i+1 ) ?>"></a></li>
 					<?php endforeach; ?>
 				</ol>
 
@@ -275,7 +316,9 @@ abstract class SiteOrigin_Widget_Base_Slider extends SiteOrigin_Widget {
 		?>
 		<li <?php foreach( $wrapper_attributes as $attr => $val ) echo $attr . '="' . esc_attr( $val ) . '" '; ?>>
 			<?php
+			do_action( 'siteorigin_widgets_slider_before_contents', $frame );
 			$this->render_frame_contents( $i, $frame );
+			do_action( 'siteorigin_widgets_slider_after_contents', $frame );
 			if( !empty( $background['videos'] ) ) {
 
 				$classes = array( 'sow-' . $background['video-sizing'] . '-element' );
@@ -331,10 +374,7 @@ abstract class SiteOrigin_Widget_Base_Slider extends SiteOrigin_Widget {
 			if( empty( $video['file'] ) && empty ( $video['url'] ) ) continue;
 			// If video is an external file, try and display it using oEmbed
 			if( !empty( $video['url'] ) ) {
-				$args = array();
-				if ( ! empty( $video['height'] ) ) {
-					$args['height'] = $video['height'];
-				}
+
 				$can_oembed = $so_video->can_oembed( $video['url'] );
 
 				// Check if we can oEmbed the video or not

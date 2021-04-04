@@ -9,20 +9,22 @@
 <?php } ?>
 <footer id="colophon" class="rsrc-footer" role="contentinfo">
 	<div class="container">  
-		<div class="row">
-					<div id="footerLink">
-						<p>
-							<a href="https://www.plastic-crate.com" target="_blank" >plastic moving boxes wholesale</a> <b>|</b>
-							<a href="http://www.joinplastic.com" target="_blank" >folding plastic crate</a> <b>|</b>
-							<a href="http://www.moving-dolly.com" target="_blank" >moving dolly</a>
-							<b>|</b>
-							<a href="http://www.qushengbox.com" target="_blank" >上海渠晟塑料有限公司</a>
-							<b>|</b>
-							<a href="http://www.jiajiubox.com" target="_blank" >上海周转箱</a>
-							<b>|</b>
-						</p>
-					</div>
+		<div class="row rsrc-author-credits">
+			<?php if ( get_theme_mod( 'giga_store_socials', 0 ) == 1 ) : ?>
+				<div class="footer-socials text-center">
+					<?php
+					if ( get_theme_mod( 'giga_store_socials', 0 ) == 1 ) {
+						giga_store_social_links();
+					}
+					?>                 
 				</div>
+			<?php endif; ?>
+			<p class="text-center">
+				<?php printf( __( 'Proudly powered by %s', 'giga-store' ), '<a href="' . esc_url( __( 'https://wordpress.org/', 'giga-store' ) ) . '">WordPress</a>' ); ?>
+				<span class="sep"> | </span>
+				<?php printf( __( 'Theme: %1$s by %2$s', 'giga-store' ), '<a href="' . esc_url('http://themes4wp.com/theme/giga-store') . '" title="' . esc_attr__( 'Free WooCommerce WordPress Theme', 'giga-store' ) . '">Giga Store</a>', 'Themes4WP' ); ?>
+			</p> 
+		</div>
 	</div>       
 </footer> 
 <p id="back-top">
@@ -39,20 +41,5 @@
 	?>
 </nav>
 <?php wp_footer(); ?>
-<div id="contactUs" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Request a Free Quote</h4>
-      </div>
-      <div class="modal-body">
-		<?php echo do_shortcode( '[contact-form-7 id="244" title="Contact form 1"]' ); ?>
-      </div>
-    </div>
-  </div>
-</div>
 </body>
 </html>

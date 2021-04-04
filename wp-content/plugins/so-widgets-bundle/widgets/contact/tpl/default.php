@@ -10,7 +10,7 @@ if( $result['status'] == 'success' ) {
 	// Display the success message
 	?>
 	<div class="sow-contact-form-success" id="contact-form-<?php echo esc_attr( $short_hash ) ?>">
-		<?php echo wp_kses_post( wpautop( $instance['settings']['success_message'] ) ) ?>
+		<?php echo $instance['settings']['success_message']; ?>
 	</div>
 	<?php
 }
@@ -41,7 +41,7 @@ else {
 
 		<?php $this->render_form_fields( $instance['fields'], $result['errors'], $instance ) ?>
 		<input type="hidden" name="instance_hash" value="<?php echo esc_attr( $instance_hash ) ?>" />
-		<?php echo wp_nonce_field( '_contact_form_submit' ) ?>
+		<?php wp_nonce_field( '_contact_form_submit' ) ?>
 
 		<?php if( $use_recaptcha ) : ?>
 			<div class="sow-recaptcha"

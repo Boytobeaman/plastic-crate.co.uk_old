@@ -120,7 +120,15 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 	 * @return array The form array, or an empty array if the form doesn't exist.
 	 */
 	function get_form( $form_type ) {
-		return $this->has_form( $form_type ) ? call_user_func( array( $this, 'get_' . $form_type . '_form'  ) ) : array();
+		$form_options = $this->has_form( $form_type ) ? call_user_func( array( $this, 'get_' . $form_type . '_form'  ) ) : array();
+
+		if ( $form_type == 'settings' ) {
+			// Allow plugins to filter global widgets form.
+			$form_options = apply_filters( 'siteorigin_widgets_settings_form', $form_options, $this );
+			$form_options = apply_filters( 'siteorigin_widgets_settings_form_' . $this->id_base, $form_options, $this );
+		}
+
+		return $form_options;
 	}
 
 	/**
@@ -237,9 +245,9 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 		echo '</div>';
 		echo $args['after_widget'];
 		do_action( 'siteorigin_widgets_after_widget_' . $this->id_base, $instance, $this );
-		
+
+		// If this is a widget preview, we need to print the styling inline
 		if ( $this->is_preview( $instance ) ) {
-			// print inline styles if we're preview the widget.
 			siteorigin_widget_print_styles();
 		}
 	}
@@ -291,7 +299,7 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 			$css_name = $this->id_base.'-'.$style.'-'.$hash;
 
 			//Ensure styles aren't generated and enqueued more than once.
-			$in_preview = $this->is_preview( $instance );
+			$in_preview = $this->is_preview( $instance ) || ( isset( $_POST['action'] ) &&  $_POST['action'] == 'so_widgets_preview' );
 			if ( ! in_array( $css_name, $this->generated_css ) || $in_preview ) {
 				if( $in_preview ) {
 					siteorigin_widget_add_inline_css( $this->get_instance_css( $instance ) );
@@ -335,17 +343,20 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 		global $wp_customize;
 		return is_a( $wp_customize, 'WP_Customize_Manager' ) && $wp_customize->is_preview();
 	}
-	
-	private function is_block_editor_page() {
+
+	protected function is_block_editor_page() {
+		$current_screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
+
 		// This is for the Gutenberg plugin.
-		$is_gutenberg_page = function_exists( 'is_gutenberg_page' ) && is_gutenberg_page();
+		$is_gutenberg_page = $current_screen != null &&
+							 function_exists( 'is_gutenberg_page' ) &&
+							 is_gutenberg_page();
 		// This is for WP 5 with the integrated block editor.
 		$is_block_editor = false;
-		$current_screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
 		if ( ! empty( $current_screen ) && method_exists( $current_screen, 'is_block_editor' ) ) {
 			$is_block_editor = $current_screen->is_block_editor();
 		}
-		
+
 		return $is_block_editor || $is_gutenberg_page;
 	}
 
@@ -469,7 +480,9 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 			$instance['_sow_form_id'] = $id;
 		}
 		?>
-		<div class="siteorigin-widget-form siteorigin-widget-form-main siteorigin-widget-form-main-<?php echo esc_attr($class_name) ?>" id="<?php echo $form_id ?>" data-class="<?php echo esc_attr( $this->widget_class ) ?>" style="display: none">
+		<div class="siteorigin-widget-form siteorigin-widget-form-main siteorigin-widget-form-main-<?php echo esc_attr($class_name) ?>"
+			 id="<?php echo $form_id ?>" data-class="<?php echo esc_attr( $this->widget_class ) ?>"
+			 data-id-base="<?php echo esc_attr( $this->id_base ) ?>" style="display: none">
 			<?php
 			$this->display_teaser_message();
 			/* @var $field_factory SiteOrigin_Widget_Field_Factory */
@@ -744,14 +757,14 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 			if ( WP_Filesystem() ) {
 				global $wp_filesystem;
 				$upload_dir = wp_upload_dir();
-				
+
 				$dir_exists = $wp_filesystem->is_dir( $upload_dir['basedir'] . '/siteorigin-widgets/' );
-				
+
 				if ( empty( $dir_exists ) ) {
 					// The 'siteorigin-widgets' directory doesn't exist, so try to create it.
 					$dir_exists = $wp_filesystem->mkdir( $upload_dir['basedir'] . '/siteorigin-widgets/' );
 				}
-				
+
 				if ( ! empty( $dir_exists ) ) {
 					// The 'siteorigin-widgets' directory exists, so we can try to write the CSS to a file.
 					$wp_filesystem->delete( $upload_dir['basedir'] . '/siteorigin-widgets/' . $name );
@@ -759,7 +772,7 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 						$upload_dir['basedir'] . '/siteorigin-widgets/' . $name,
 						$css
 					);
-					
+
 					// Alert other plugins that we've added a new CSS file
 					do_action( 'siteorigin_widgets_stylesheet_added', $name, $instance );
 				}
@@ -797,7 +810,7 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 				//Reindex array
 				$this->generated_css = array_values( $this->generated_css );
 			}
-			
+
 			// Alert other plugins that we've deleted a CSS file
 			do_action( 'siteorigin_widgets_stylesheet_deleted', $name, $instance );
 		}
@@ -872,6 +885,10 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 		$less = preg_replace_callback( '/^@import\s+".*?\/?([\w\-\.]+)";/m', array( $this, 'get_less_import_contents' ), $less );
 
 		$vars = apply_filters( 'siteorigin_widgets_less_variables_' . $this->id_base, $this->get_less_variables( $instance ), $instance, $this );
+
+		$less = apply_filters( 'siteorigin_widgets_styles_vars', $less, $vars, $this->widget_class, $instance );
+		$less = apply_filters( 'siteorigin_widgets_less_vars_' . $this->id_base, $less, $vars, $instance, $this );
+
 		if( !empty( $vars ) ){
 			foreach($vars as $name => $value) {
 				// Ignore empty string, false and null values (but keep '0')
@@ -907,7 +924,7 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 
 			try {
 				if( method_exists( $compiler, 'compile' ) ) {
-					$css = $compiler->compile( $less );
+					$css = @ $compiler->compile( $less );
 				}
 			}
 			catch ( Exception $e ) {
@@ -994,49 +1011,6 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 		// Finally call the function and include the
 		$args = array_map('trim', $args);
 		return call_user_func( array($this, $func), $this->current_instance, $args );
-	}
-
-	/**
-	 * Less function for importing Google web fonts.
-	 *
-	 * @param $instance
-	 * @param $args
-	 *
-	 * @return string
-	 */
-	function less_import_google_font($instance, $args) {
-		if( empty( $instance ) ) return;
-
-		$fonts = $this->get_google_font_fields($instance);
-		if( empty( $fonts ) || ! is_array( $fonts ) ) return '';
-
-		$font_imports = array();
-
-		foreach ( $fonts as $font ) {
-			$font_imports[] = siteorigin_widget_get_font( $font );
-		}
-
-		$import_strings = array();
-		foreach( $font_imports as $import ) {
-			$import_strings[] = !empty($import['css_import']) ? $import['css_import'] : '';
-		}
-
-		// Remove empty and duplicate items from the array
-		$import_strings = array_filter( $import_strings );
-		$import_strings = array_unique( $import_strings );
-
-		return implode( "\n", $import_strings );
-	}
-
-	/**
-	 * Get any font fields which may be used by this widget.
-	 *
-	 * @param $instance
-	 *
-	 * @return array
-	 */
-	function get_google_font_fields( $instance ) {
-		return apply_filters( 'siteorigin_widgets_google_font_fields_' . $this->id_base, array(), $instance, $this );
 	}
 
 	/**
@@ -1342,7 +1316,7 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 	function is_preview( $instance = array() ) {
 		// Check if the instance is a preview
 		if( !empty( $instance[ 'is_preview' ] ) ) return true;
-		
+
 		// Check if the general request is a preview
 		$is_preview =
 			is_preview() || // Is this a standard preview
@@ -1361,7 +1335,7 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 	 * @return bool
 	 */
 	function show_preview_button(){
-		$show_preview = $this->widget_options['has_preview'] && ! $this->is_customize_preview();
+		$show_preview = ! empty( $this->widget_options['has_preview'] ) && ! $this->is_customize_preview();
 		$show_preview = apply_filters( 'siteorigin_widgets_form_show_preview_button', $show_preview, $this );
 		return $show_preview;
 	}
@@ -1369,9 +1343,11 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 	/**
 	 * Get the global settings from the options table.
 	 *
+	 * @param string|null $key
+	 *
 	 * @return mixed
 	 */
-	function get_global_settings( ){
+	function get_global_settings( $key = null ){
 		$values = get_option( 'so_widget_settings[' . $this->widget_class . ']', array() );
 
 		// Add in the defaults
@@ -1379,7 +1355,7 @@ abstract class SiteOrigin_Widget extends WP_Widget {
 			$values = $this->add_defaults( $this->get_settings_form(), $values );
 		}
 
-		return $values;
+		return !empty( $key ) ? $values[$key] : $values;
 	}
 
 	/**
