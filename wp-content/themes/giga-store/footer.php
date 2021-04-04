@@ -19,11 +19,21 @@
 					?>                 
 				</div>
 			<?php endif; ?>
-			<p class="text-center">
-				<?php printf( __( 'Proudly powered by %s', 'giga-store' ), '<a href="' . esc_url( __( 'https://wordpress.org/', 'giga-store' ) ) . '">WordPress</a>' ); ?>
-				<span class="sep"> | </span>
-				<?php printf( __( 'Theme: %1$s by %2$s', 'giga-store' ), '<a href="' . esc_url('http://themes4wp.com/theme/giga-store') . '" title="' . esc_attr__( 'Free WooCommerce WordPress Theme', 'giga-store' ) . '">Giga Store</a>', 'Themes4WP' ); ?>
-			</p> 
+			<div id="footerLink" class="text-center">
+				<p>
+					<a href="https://www.plastic-crate.com" target="_blank" >plastic moving boxes</a> <b>|</b>
+					<a href="http://www.joinplastic.com" target="_blank" >folding plastic crate</a> <b>|</b>
+					<a href="http://www.moving-dolly.com" target="_blank" >moving dolly</a>
+					<b>|</b>
+					<a href="http://www.qushengbox.com" target="_blank" >上海渠晟塑料有限公司</a>
+					<b>|</b>
+					<a href="http://www.jiajiubox.com" target="_blank" >上海周转箱</a>
+					<b>|</b>
+					<a href="https://www.vegcrates.com/space-age-totes-with-lids-for-sale/" target="_blank" >space age totes</a>
+					<b>|</b>
+					
+				</p>
+			</div>
 		</div>
 	</div>       
 </footer> 
