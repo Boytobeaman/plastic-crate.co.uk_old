@@ -1,0 +1,10 @@
+2021-04-05T16:47:00+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+

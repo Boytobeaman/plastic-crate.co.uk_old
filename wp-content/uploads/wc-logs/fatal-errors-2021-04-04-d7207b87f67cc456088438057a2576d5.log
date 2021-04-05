@@ -811,3 +811,554 @@ Stack trace:
 #6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
 #7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
 
+2021-04-04T11:58:10+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71590)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71590)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T12:08:30+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71591)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71591)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T12:25:47+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71592)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71592)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T12:35:52+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71593)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71593)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T12:45:54+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71594)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71594)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T12:57:02+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71595)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71595)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T13:07:09+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71596)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71596)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T13:17:59+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71600)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71600)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T13:29:24+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71601)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71601)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T13:39:45+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71602)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71602)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T13:50:50+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71603)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71603)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T14:01:05+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71604)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71604)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T14:11:08+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71605)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71605)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T14:22:35+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71606)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71606)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T14:34:45+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71607)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71607)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T14:38:47+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T14:38:59+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T14:39:24+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T14:40:12+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T14:40:29+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T14:40:47+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T14:43:05+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T14:45:19+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71608)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71608)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T14:46:00+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T14:47:37+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T14:50:54+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T14:51:13+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T14:56:39+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71609)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71609)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T14:59:22+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:00:27+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:05:12+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:06:38+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71610)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71610)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T15:06:44+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:06:48+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:07:06+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:07:27+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:09:54+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:09:58+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:10:03+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:15:48+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:16:40+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71611)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71611)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T15:17:07+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:18:06+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:23:23+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:26:45+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71612)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71612)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T15:30:30+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:36:59+00:00 CRITICAL Uncaught Exception: Table 'plastic-crate.co.uk.wp_pmxi_images' doesn't exist in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php:78
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/actions/add_attachment.php(22): PMXI_Model_Record->insert()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmxi_add_attachment(71613)
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(4317): do_action('add_attachment', 71613)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/post.php(5979): wp_insert_post(Array, false, true)
+#6 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/woocommerce/includes/class-wc-install.php(1335): wp_insert_attachment(Array, '/data/wwwroot/w...')
+#7 /data/wwwroot/www. in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wp-all-import/models/model/record.php on line 78
+
+2021-04-04T15:39:09+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T15:40:57+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T16:08:46+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T16:12:27+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T16:19:05+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+
+2021-04-04T16:46:28+00:00 CRITICAL Uncaught Error: Call to undefined function acf_local() in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php:21
+Stack trace:
+#0 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller.php(71): include()
+#1 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/controller/admin.php(69): PMAI_Controller->render('admin/import/in...')
+#2 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/controllers/admin/import.php(17): PMAI_Controller_Admin->render()
+#3 /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/actions/pmxi_extend_options_custom_fields.php(5): PMAI_Admin_Import->index('product', Array)
+#4 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(292): pmai_pmxi_extend_options_custom_fields('product', Array)
+#5 /data/wwwroot/www.plastic-crate.co.uk/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 /data/wwwro in /data/wwwroot/www.plastic-crate.co.uk/wp-content/plugins/wpai-acf-add-on/views/admin/import/index.php on line 21
+

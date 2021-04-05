@@ -1,17 +1,3 @@
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-
-
-#Redirect /wp-content/uploads/ https://aws.plastic-crate.co.uk/wp-content/uploads/
-#Redirect /img/ https://aws.plastic-crate.co.uk/img/
-#Redirect /js/ https://aws.plastic-crate.co.uk/js/
-
-</IfModule>
 
 # BEGIN WordPress
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
